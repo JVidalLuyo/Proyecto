@@ -1,15 +1,14 @@
+server:
+  port: 8085
+
 spring:
   datasource:
-    url: jdbc:postgresql://ep-blue-wind-ac1zgep7-pooler.sa-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require
+    url: jdbc:postgresql://ep-blue-wind-ac1zgep7-pooler.sa-east-1.aws.neon.tech/proyecto?sslmode=require&channel_binding=require
     username: neondb_owner
     password: npg_ute30FIckLrj
-    drive-class-name: org.postgresql.Driver
+    driver-class-name: org.postgresql.Driver
+
   jpa:
     hibernate:
       ddl-auto: none
     database-platform: org.hibernate.dialect.PostgreSQLDialect
-  server:
-    port: 8085
-
-
-  
